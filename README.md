@@ -14,3 +14,5 @@ Unsupported Media Type error is logged in the console:
     UnknownError: Unsupported Media Type
 
 Expected - invoke lambda from within other http-event triggered lambda
+
+I'm using node version 10.15.3
