@@ -1,0 +1,14 @@
+{
+  "name": "serverless-offline-unsupported-media-type",
+  "version": "1.0.0",
+  "description": "Example repo for https://github.com/dherault/serverless-offline/issues/747",
+  "scripts": {
+    "start": "sls offline"
+  },
+  "author": "moravcik",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless": "^1.50.1",
+    "serverless-offline": "^5.10.1"
+  }
+}
