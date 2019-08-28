@@ -7,9 +7,12 @@ provider:
   name: aws
   runtime: nodejs10.x
   region: us-east-1
+  stage: test
   environment:
     INVOKE_ENDPOINT: 'http://localhost:4000'
     INVOKE_FUNCTION: 'invokeTest'
+# as pointed by @vepanimas, it works if specified as:
+#    INVOKE_FUNCTION: '${self:service}-${self:provider.stage}-invokeTest'
 
 custom:
   serverless-offline:
@@ -25,4 +28,3 @@ functions:
 
   invokeTest:
     handler: 'invoke-lambda.handler'
-

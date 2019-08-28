@@ -7,7 +7,7 @@ module.exports.handler = (event, context, callback) => {
     const params = {
         FunctionName: process.env.INVOKE_FUNCTION,
         InvocationType: 'RequestResponse',
-        Payload: 'Hello'
+        Payload: JSON.stringify({ msg: 'Hello' })
     };
 
     lambda.invoke(params, (error, response) => {

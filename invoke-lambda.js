@@ -1,3 +1,3 @@
 module.exports.handler = (event, context, callback) => {
-    callback(null, `${event} from Invoked function`);
+    callback(null, `${event.msg} (from Invoked function)`);
 };

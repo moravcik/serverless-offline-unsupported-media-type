@@ -16,3 +16,11 @@ Unsupported Media Type error is logged in the console:
 Expected - invoke lambda from within other http-event triggered lambda
 
 I'm using node version 10.15.3
+
+---
+
+UPDATE: as pointed by @vepanimas, it works if function name is specified as: `{service-name}-{stage}-{name}`
+
+in our case:
+
+    INVOKE_FUNCTION: '${self:service}-${self:provider.stage}-invokeTest'
